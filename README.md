@@ -63,9 +63,9 @@ Notas: Implementación simple, rápida y segura.
 🔹 ft_isdigit.c
 Función: Comprueba si un carácter es un dígito (0-9).
 
--Comparación de rango ASCII.
+- Comparación de rango ASCII.
 
--Útil para validación de entradas numéricas.
+- Útil para validación de entradas numéricas.
 
 Ejemplo:
 
@@ -77,7 +77,7 @@ ft_isdigit('a'); // 0
 🔹 ft_isalnum.c
 Función: Comprueba si un carácter es alfanumérico.
 
--Combina ft_isalpha y ft_isdigit.
+- Combina ft_isalpha y ft_isdigit.
 
 Ejemplo:
 
@@ -90,7 +90,7 @@ ft_isalnum('%'); // 0
 🔹 ft_isascii.c
 Función: Verifica si un valor está en el rango ASCII (0-127).
 
--Garantiza compatibilidad con funciones de C que esperan valores ASCII.
+- Garantiza compatibilidad con funciones de C que esperan valores ASCII.
 
 Ejemplo:
 
@@ -101,33 +101,25 @@ ft_isascii(65);  // 1
 🔹 ft_isprint.c
 Función: Comprueba si un carácter es imprimible.
 
-Explicación técnica:
-
-Incluye espacio pero excluye caracteres de control (0-31, 127).
+- Incluye espacio pero excluye caracteres de control (0-31, 127).
 
 🔹 ft_toupper.c
 Función: Convierte minúsculas a mayúsculas.
 
-Explicación técnica:
-
-Manipulación aritmética de ASCII (c - 32 si está en rango 'a'-'z').
+- Manipulación aritmética de ASCII (c - 32 si está en rango 'a'-'z').
 
 🔹 ft_tolower.c
 Función: Convierte mayúsculas a minúsculas.
 
-Explicación técnica:
-
-Complemento de ft_toupper.
+- Complemento de ft_toupper.
 
 📝 Funciones de Strings (16)
 🔹 ft_strlen.c
 Función: Calcula la longitud de una cadena.
 
-Explicación técnica:
+- Recorre la cadena hasta encontrar \0.
 
-Recorre la cadena hasta encontrar \0.
-
-No requiere memoria dinámica.
+- No requiere memoria dinámica.
 
 Ejemplo:
 
@@ -139,41 +131,31 @@ Notas: Seguro con cadenas vacías.
 🔹 ft_strchr.c
 Función: Busca la primera aparición de un carácter.
 
-Explicación técnica:
+- Recorre la cadena y devuelve puntero al primer match.
 
-Recorre la cadena y devuelve puntero al primer match.
-
-Memoria: No reserva memoria adicional.
+- Memoria: No reserva memoria adicional.
 
 🔹 ft_strrchr.c
 Función: Busca la última aparición de un carácter.
 
-Explicación técnica:
-
-Recorre toda la cadena para devolver el último match.
+- Recorre toda la cadena para devolver el último match.
 
 🔹 ft_strncmp.c
 Función: Compara dos cadenas hasta n caracteres.
 
-Explicación técnica:
-
-Evita leer memoria fuera de rango.
+- Evita leer memoria fuera de rango.
 
 🔹 ft_strnstr.c
 Función: Busca una substring dentro de un límite de longitud.
 
-Explicación técnica:
+- Algoritmo naive de búsqueda.
 
-Algoritmo naive de búsqueda.
-
-Retorna puntero al inicio de la substring o NULL.
+- Retorna puntero al inicio de la substring o NULL.
 
 🔹 ft_strlcpy.c
 Función: Copia string asegurando terminación nula.
 
-Explicación técnica:
-
-Evita overflows.
+- Evita overflows.
 
 🔹 ft_strlcat.c
 Función: Concatena strings asegurando buffer.
@@ -181,13 +163,11 @@ Función: Concatena strings asegurando buffer.
 🔹 ft_strdup.c
 Función: Duplica una cadena en memoria dinámica.
 
-Explicación técnica:
+- Reserva memoria con malloc.
 
-Reserva memoria con malloc.
+- Copia carácter por carácter y termina en \0.
 
-Copia carácter por carácter y termina en \0.
-
-Usuario debe usar free.
+- Usuario debe usar free.
 
 Ejemplo:
 
@@ -198,47 +178,37 @@ free(copy);
 🔹 ft_substr.c
 Función: Extrae una substring.
 
-Explicación técnica:
+- Maneja límites de inicio y longitud.
 
-Maneja límites de inicio y longitud.
-
-Reserva memoria dinámica.
+- Reserva memoria dinámica.
 
 🔹 ft_strjoin.c
 Función: Concatena dos strings en nueva memoria.
 
-Explicación técnica:
+- Calcula longitud total y reserva memoria.
 
-Calcula longitud total y reserva memoria.
-
-Copia las dos cadenas y añade terminador nulo.
+- Copia las dos cadenas y añade terminador nulo.
 
 🔹 ft_strtrim.c
 Función: Elimina caracteres al inicio y final de un string.
 
-Explicación técnica:
+- Itera desde ambos extremos.
 
-Itera desde ambos extremos.
-
-Reserva nueva memoria.
+- Reserva nueva memoria.
 
 🔹 ft_split.c
 Función: Divide un string por un delimitador en un array de strings.
 
-Explicación técnica:
+- Cuenta palabras, reserva memoria para cada una.
 
-Cuenta palabras, reserva memoria para cada una.
-
-Incluye terminador NULL al final del array.
+- Incluye terminador NULL al final del array.
 
 🔹 ft_strmapi.c
 Función: Aplica función a cada carácter y retorna nuevo string.
 
-Explicación técnica:
+- Reserva memoria para string nuevo.
 
-Reserva memoria para string nuevo.
-
-No altera original.
+- No altera original.
 
 🔹 ft_striteri.c
 Función: Aplica función a cada carácter in-place con índice.
@@ -297,8 +267,6 @@ Funciones completas de manipulación
 
 🚀 Uso
 bash
-Copiar
-Editar
 make
 make bonus
 make clean
@@ -343,6 +311,3 @@ Nuevas estructuras (árboles, hash maps)
 
 Suite de pruebas completa
 
-🔐 Licencia
-MIT — Libre para uso y modificación.
-Desarrollado como parte del currículo de 42 School - 2024
