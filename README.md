@@ -71,6 +71,7 @@ int main() {
     printf("%d\n", ft_isalpha('A')); // 1
     printf("%d\n", ft_isalpha('1')); // 0
 }
+```
 Notas: Implementación simple, rápida y segura.
 
 🔹 ft_isdigit.c
