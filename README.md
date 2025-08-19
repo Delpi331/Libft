@@ -33,20 +33,6 @@ Crear Libft desde cero permitió:
 
 ---
 
-## ⚙️ Arquitectura del Proyecto
-
-libft/
-├── src/ # Código fuente organizado por categorías
-├── inc/ # Archivos de cabecera
-├── Makefile # Sistema de compilación
-└── tests/ # Suite de pruebas
-
-yaml
-Copiar
-Editar
-
----
-
 # 📋 Funciones Detalladas
 
 Cada función incluye: descripción, explicación técnica, manejo de memoria, ejemplos y notas de diseño.
@@ -77,11 +63,9 @@ Notas: Implementación simple, rápida y segura.
 🔹 ft_isdigit.c
 Función: Comprueba si un carácter es un dígito (0-9).
 
-Explicación técnica:
+-Comparación de rango ASCII.
 
-Comparación de rango ASCII.
-
-Útil para validación de entradas numéricas.
+-Útil para validación de entradas numéricas.
 
 Ejemplo:
 
@@ -93,9 +77,7 @@ ft_isdigit('a'); // 0
 🔹 ft_isalnum.c
 Función: Comprueba si un carácter es alfanumérico.
 
-Explicación técnica:
-
-Combina ft_isalpha y ft_isdigit.
+-Combina ft_isalpha y ft_isdigit.
 
 Ejemplo:
 
@@ -108,9 +90,7 @@ ft_isalnum('%'); // 0
 🔹 ft_isascii.c
 Función: Verifica si un valor está en el rango ASCII (0-127).
 
-Explicación técnica:
-
-Garantiza compatibilidad con funciones de C que esperan valores ASCII.
+-Garantiza compatibilidad con funciones de C que esperan valores ASCII.
 
 Ejemplo:
 
