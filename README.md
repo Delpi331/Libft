@@ -85,11 +85,11 @@ Comparación de rango ASCII.
 
 Ejemplo:
 
-c
-Copiar
-Editar
+```c
 ft_isdigit('5'); // 1
 ft_isdigit('a'); // 0
+```
+
 🔹 ft_isalnum.c
 Función: Comprueba si un carácter es alfanumérico.
 
@@ -99,12 +99,12 @@ Combina ft_isalpha y ft_isdigit.
 
 Ejemplo:
 
-c
-Copiar
-Editar
+```c
 ft_isalnum('A'); // 1
 ft_isalnum('7'); // 1
 ft_isalnum('%'); // 0
+```
+
 🔹 ft_isascii.c
 Función: Verifica si un valor está en el rango ASCII (0-127).
 
@@ -114,11 +114,10 @@ Garantiza compatibilidad con funciones de C que esperan valores ASCII.
 
 Ejemplo:
 
-c
-Copiar
-Editar
+```c
 ft_isascii(128); // 0
 ft_isascii(65);  // 1
+```
 🔹 ft_isprint.c
 Función: Comprueba si un carácter es imprimible.
 
@@ -152,10 +151,9 @@ No requiere memoria dinámica.
 
 Ejemplo:
 
-c
-Copiar
-Editar
+```c
 ft_strlen("Hola"); // 4
+```
 Notas: Seguro con cadenas vacías.
 
 🔹 ft_strchr.c
@@ -213,11 +211,10 @@ Usuario debe usar free.
 
 Ejemplo:
 
-c
-Copiar
-Editar
+```c
 char *copy = ft_strdup("Hola");
 free(copy);
+```
 🔹 ft_substr.c
 Función: Extrae una substring.
 
@@ -328,9 +325,7 @@ make clean
 make fclean && make
 Ejemplo:
 
-c
-Copiar
-Editar
+```c
 #include "libft.h"
 
 int main() {
@@ -339,6 +334,8 @@ int main() {
     free(str);
     return 0;
 }
+```
+
 🧠 Decisiones de Diseño
 Robustez de memoria
 
