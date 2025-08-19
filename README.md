@@ -2,8 +2,6 @@
 
 **Implementation of 45 C standard library functions and additional utilities with robust memory management and linked list support.**
 
-![banner](https://raw.githubusercontent.com/placeholder/placeholder/main/assets/libft-banner.png)
-
 ---
 
 ## 📖 Overview  
